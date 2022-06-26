@@ -437,6 +437,11 @@ border-radius: 20px;
     width: 300px;
     margin-left: 0px;
   }
+  .about{
+    background-size: cover;
+    background-image: none;
+    background-color: #b0adb6;
+  }
 }
 
 @media (max-width: 750px) {
@@ -529,6 +534,10 @@ border-radius: 20px;
     font-size: 20px;
     color: #4070f4;
   }
+  .about{
+    background-color: #b0adb6;
+    background-size: cover;
+  }
   .about .about-details{
     justify-content: center;
     flex-direction: column;
@@ -547,7 +556,7 @@ border-radius: 20px;
     width: 80%;
   }
   .contact .text{
-    width: 100%;
-    font-size: 10px;
+    width: 90%;
+    font-size: 8px;
 }
 }
