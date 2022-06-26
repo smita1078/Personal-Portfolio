@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=PT+Serif&family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+/*  scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius:  5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(196, 174, 164);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+  /* navbar styling */
+  nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Titillium Web', sans-serif;
+  }
+nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+nav .navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
+  }
+  nav .navbar .menu{
+    display: flex;
+    position: relative;
+  }
+  nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+  }
+  .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+    text-decoration: none
+  }
+  .navbar .menu a:hover{
+    color: white;
+  }
+
+ #facebook img,#twitter img,#instagram img{
+width: 30px;
+height: 30px;
+margin-right: 5px;
+border-radius: 8px;
+border: 4px solid #000000;
+  }
+  #facebook img:hover,#twitter img:hover,#instagram img:hover{
+    border: 4px solid white;
+  }
+  /* home section styling */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url(UntitledNEWdesign10.png) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 40px;
+  }
+  .home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home .text-one{
+    font-size: 23px;
+    font-weight: 500px;
+    color: #25222b;
+  }
+  .home .text-two{
+    color: #0d3755;
+    font-size: 55px;
+    font-weight: 800;
+    margin-left: -3px;
+  }
+  .home .text-three{
+    font-size: 33px;
+    font-weight: 400;
+    margin: 5px 0;
+    color: #1a423a;
+  }
+  .home .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+    font-weight: 400;
+    color: #202020;
+  }
+  .home .button{
+    margin: 12px 0;
+  }
+  .home .button button{
+    outline: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 300;
+    background: #252525;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .home .button button:hover{
+    border-color: #070707;
+    background-color: #fff;
+    color: #252525;
+  }
+  section{
+    padding-top: 40px;
+  }
+  section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section .title{
+    display: flex;
+    justify-content:flex-start;
+    margin-bottom: 50px;
+  }
+  section .title span{
+    color: #092535;
+    font-size: 50px;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 8px;
+  }
+section .title span::before,
+section .title span::after{
+  content:'';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #31a0e0;
+  left: 0;
+  bottom: 0;
+}
+section  .topic{
+  color: #e6ecf0;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 300;
+  background: #252525;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #070707;
+  background-color: #fff;
+  color: #252525;
+}
+/* My Experience CSS */
+.Experience{
+padding: 40px 0;
+background-color:#6f6b79;
+margin-bottom: 40px;
+}
+.Experience .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.Experience .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 40px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+ #one{
+background: url(Untitleddesign_scholar.png) no-repeat;  
+}
+#two{
+  background: url(Untitleddesign_.png) no-repeat;
+}
+#three{
+  background: url(Untitleddesign_hh.png) no-repeat;
+}
+#four{
+  background: url(Untitleddesign_hh.png) no-repeat;
+}
+#five{
+  background: url(Untitleddesign_.png) no-repeat;
+}
+#six{
+  background: url(Untitleddesign_tech.png) no-repeat;
+}
+
+.Experience .boxes .box:hover{
+background:#245c51 !important;
+transition: all 0.4s ease;
+}
+
+/* Contact Me CSS */
+.contact{
+  padding: 40px 0;
+ background: url(Untitledpinkdesign.png) no-repeat;
+ background-size: cover;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text{
+  width: 60%;
+  text-align: left;
+  margin-left: 0px;
+  background-color: #245c51;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+.contact .text a,.contact .text p{
+  text-decoration: none;
+  font-family: poppins;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+.contact .text a:hover{
+  text-shadow: 2px 2px 8px white;
+}
+/* Footer CSS */
+footer{
+  background: #80736A;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+footer .text span{
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+footer .text span a{
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+ /* My Skills CSS */
+ .skills{
+  background:url(Untitledbgdesign.png) no-repeat;
+  padding: 40px 0;
+  background-size: cover;
+ }
+ .skills-details .text{
+  width: 50%;
+  text-align: justify;
+  font-size: large;
+  font-weight: 300;
+}
+.skills-details .text .topic{
+  font-size: xx-large;
+}
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+.skills-details p{
+  color: #060f14;
+  text-align: justify;
+}
+.skills-details .boxes{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skills-details .box{
+  width: calc(100%  - 20px);
+  margin: 6px;
+  background-color: #584F48;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.skills-details .boxes .topic{
+  font-size: 20px;
+  color: white;
+}
+.skills-details .boxes .per{
+  font-size: 19.5px;
+  color: #000000;
+}
+.skills-details .boxes :hover{
+  background:#245c51 !important;
+transition: all 0.3s ease;
+}
+/* about section */
+.about{
+  padding: 40px 0;
+  background: url(UntitledAboutdesign.png) no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+.about .left img{
+  height: 450px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 35px;
+  margin-left: 80px;
+  filter: grayscale(35%);
+  border: 7px solid #555;
+}
+.about .about-details .left{
+  width: 45%;
+}
+.about-details .right{
+  width: 60%;
+}
+.about-details .right p{
+  font-size: larger;
+  text-align: justify;
+  color: #000000;
+  background: #584F48;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Titillium Web;
+}
+.about-details .right .topic{
+  font-size: x-large;
+}
+.about-details .right p:hover{
+  background-color:#245c51;
+  transition: all 0.4s ease;
+  cursor: default;
+}
+.scroll-up img{
+  width: 35px;
+  height: 40px;
+margin-left: 10px;
+border-radius: 20px;
+}
+
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 900px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .Experience .boxes .box{
+    margin: 20px 0;
+    width: calc(100% /1 - 0px);
+  }
+  .contact .text{
+    width: 80%;
+    font-size: 10px;
+}
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 300px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar{
+    width: 80%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 800px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 15px;
+    display: block;
+    color: #fff;
+    margin: 5px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #4070f4;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Experince .boxes .box{
+    margin: 20px 0;
+    width: 80%;
+  }
+  .contact .text{
+    width: 80%;
+}
+.about .about-details{
+  justify-content: center;
+  flex-direction: column;
+}
+.about .about-details .left{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.about-details .right{
+  width: 90%;
+  margin: 40px 0;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 20px;
+    color: #4070f4;
+  }
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .Experince .boxes .box{
+    margin: 20px 0;
+    width: 80%;
+  }
+  .contact .text{
+    width: 100%;
+    font-size: 10px;
+}
+}
